@@ -1,0 +1,154 @@
+﻿@model KaraokeWeb.Models.EF.Bill
+@{
+	ViewBag.Title = "Update";
+	Layout = "~/Areas/Staff/Views/Shared/_Layouts.cshtml";
+}
+
+@section header{
+
+}
+<div class="sign-up">
+	@using (Html.BeginForm())
+	{
+
+		@Html.AntiForgeryToken()
+		<h3 class="text-uppercase">cập nhật hóa đơn</h3>
+
+		<h6>Thông tin hóa đơn</h6>
+		@Html.ValidationSummary(true, "", new { @class = "text-danger" })
+		@Html.HiddenFor(model => model.bill_id)
+		<div class="form-group">
+			<div class="sign-u">
+				<div class="sign-up1">
+					<h4>Mã hóa đơn* :</h4>
+				</div>
+				<div class="sign-up2">
+					@Html.TextBoxFor(model => model.bill_id, new { id = "bill_id", @class = "form-control" })
+					@Html.ValidationMessageFor(model => model.bill_id, "", new { @class = "text-danger" })
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+		<div class="form-group">
+			<div class="sign-u">
+				<div class="sign-up1">
+					<h4>Số điện thoại khách hàng* :</h4>
+				</div>
+				<div class="sign-up2">
+					@Html.TextBoxFor(model => model.user_phone, new { type = "tel", maxlength = "10", @class = "form-control" })
+					@Html.ValidationMessageFor(model => model.user_phone, "", new { @class = "text-danger" })
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+		<div class="form-group">
+			<div class="sign-u">
+				<div class="sign-up1">
+					<h4>Phòng* :</h4>
+				</div>
+				<div class="sign-up2">
+					@Html.DropDownListFor(model => model.room_id, null, new { @class = "form-control", id = "dropdown" })
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+		<div class="form-group">
+			<div class="sign-u">
+				<div class="sign-up1">
+					<h4>Nhân viên* :</h4>
+				</div>
+				<div class="sign-up2">
+					@Html.TextBoxFor(model => model.id_staff, new { type = "number", maxlength = "1", @class = "form-control" })
+					@Html.ValidationMessageFor(model => model.id_staff, "", new { @class = "text-danger" })
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+		<div class="form-group">
+			<div class="sign-u">
+				<div class="sign-up1">
+					<h4>Số giờ sử dụng* :</h4>
+				</div>
+				<div class="sign-up2">
+					@Html.TextBoxFor(model => model.used_time, new { type = "number", maxlength = "2", @class = "form-control" })
+					@Html.ValidationMessageFor(model => model.used_time, "", new { @class = "text-danger" })
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+		<div class="form-group">
+			<div class="sign-u">
+				<div class="sign-up1">
+					<h4>Ngày tạo* :</h4>
+				</div>
+				<div class="sign-up2">
+					@Html.TextBoxFor(model => model.created_at, new { type = "datetime-local", @class = "form-control" })
+					@Html.ValidationMessageFor(model => model.created_at, "", new { @class = "text-danger" })
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+				<div class="form-group">
+			<div class="sign-u">
+				<div class="sign-up1">
+					<h4>Trạng thái hóa đơn* :</h4>
+				</div>
+				<div class="sign-up2">		
+					@Html.TextBoxFor(model => model.status, new { type="number", @class = "form-control" })
+					<p class="creating">
+						(Số 1 là đang sử dụng , số 0 là ngửng sử dụng)
+					</p>
+					@Html.ValidationMessageFor(model => model.status, "", new { @class = "text-danger" })
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+		<div class="form-group">
+			<div class="sign-u">
+				<div class="sign-up1">
+					<h4>Tiền phòng* :</h4>
+				</div>
+				<div class="sign-up2">
+					@Html.TextBoxFor(model => model.price, new { @class = "form-control" })
+					@Html.ValidationMessageFor(model => model.price, "", new { @class = "text-danger" })
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+		<div class="form-group">
+			<div class="sign-u">
+				<div class="sign-up1">
+					<h4>Tổng giá phòng* :</h4>
+				</div>
+				<div class="sign-up2">
+					@Html.TextBoxFor(model => model.total_room, new { @class = "form-control" })
+					@Html.ValidationMessageFor(model => model.total_room, "", new { @class = "text-danger" })
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+		<div class="form-group">
+			<div class="sign-u">
+				<div class="sign-up1">
+					<h4>Tổng cộng* :</h4>
+				</div>
+				<div class="sign-up2">
+					@Html.TextBoxFor(model => model.total, new { @class = "form-control" })
+					@Html.ValidationMessageFor(model => model.total, "", new { @class = "text-danger" })
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+
+		<div class="sub_home">
+			<div class="sub_home_left">
+				<button type="submit">Cập nhật thông tin</button>
+			</div>
+			<div class="sub_home_right">
+				@Html.ActionLink("Quay lại trang chủ", "Index", "Book")
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	}
+</div>
+

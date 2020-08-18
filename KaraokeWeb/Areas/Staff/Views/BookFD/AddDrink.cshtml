@@ -1,0 +1,87 @@
+﻿@model KaraokeWeb.Models.EF.Drink_Detail
+@{
+	ViewBag.Title = "AddDrink";
+	Layout = "~/Areas/Staff/Views/Shared/_Layouts.cshtml";
+}
+@section header{
+
+}
+<div class="sign-up">
+	@using (Html.BeginForm())
+	{
+		@Html.AntiForgeryToken()
+		<h3 class="text-uppercase">đặt nước uống</h3>
+
+
+		<h6>Thông tin phòng</h6>
+		@Html.ValidationSummary(true, "", new { @class = "text-danger" })
+		<div class="form-group">
+			<div class="sign-u">
+				<div class="sign-up1">
+					<h4>Mã hóa đơn* :</h4>
+				</div>
+				<div class="sign-up2">
+					@Html.DropDownListFor(model => model.bill_id, null, new { @class = "form-control" })
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+		<div class="form-group">
+			<div class="sign-u">
+				<div class="sign-up1">
+					<h4>Nước uống* :</h4>
+				</div>
+				<div class="sign-up2">
+					@Html.DropDownListFor(model => model.drink_id, null, new { @class = "form-control" })
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+		<div class="form-group">
+			<div class="sign-u">
+				<div class="sign-up1">
+					<h4>Số lượng* :</h4>
+				</div>
+				<div class="sign-up2">
+					@Html.TextBoxFor(model => model.amount, new { type = "number", maxlength = "3", @class = "form-control" })
+					@Html.ValidationMessageFor(model => model.amount, "", new { @class = "text-danger" })
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+		<div class="form-group">
+			<div class="sign-u">
+				<div class="sign-up1">
+					<h4>Giá* :</h4>
+				</div>
+				<div class="sign-up2">
+					@Html.TextBoxFor(model => model.price, new { @class = "form-control" })
+					@Html.ValidationMessageFor(model => model.price, "", new { @class = "text-danger" })
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+		<div class="form-group">
+			<div class="sign-u">
+				<div class="sign-up1">
+					<h4>Tổng cộng* :</h4>
+				</div>
+				<div class="sign-up2">
+					@Html.TextBoxFor(model => model.total, new { @class = "form-control" })
+					@Html.ValidationMessageFor(model => model.total, "", new { @class = "text-danger" })
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+		<div class="sub_home">
+			<div class="sub_home_left">
+				<button type="submit">Đặt nước uống</button>
+			</div>
+			<div class="sub_home_right">
+				@Html.ActionLink("Quay lại trang chủ", "Index", "Book")
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	}
+</div>
+

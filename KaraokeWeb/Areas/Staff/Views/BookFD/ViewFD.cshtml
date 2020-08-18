@@ -1,0 +1,110 @@
+﻿
+@{
+	ViewBag.Title = "ViewFD";
+	Layout = "~/Areas/Staff/Views/Shared/_Layouts.cshtml";
+	var listFDetail = (List<KaraokeWeb.Models.EF.Food_Detail>)ViewBag.fDetail;
+	var listDDetail = (List<KaraokeWeb.Models.EF.Drink_Detail>)ViewBag.dDetail;
+}
+@section header{
+
+}
+<div class="panel panel-warning" data-widget="{&quot;draggable&quot;: &quot;false&quot;}" data-widget-static="">
+	<div class="panel-heading">
+		<h2 class="text-uppercase">Danh sách món ăn đã đặt</h2>
+		<div class="panel-ctrls" data-actions-container="" data-action-collapse="{&quot;target&quot;: &quot;.panel-body&quot;}"><span class="button-icon has-bg"><i class="ti ti-angle-down"></i></span></div>
+	</div>
+	<div class="panel-body no-padding" style="display: block;">
+		<table class="table table-striped">
+			<thead>
+				<tr class="warning">
+					<th>Mã hóa đơn</th>
+					<th>Mã món ăn</th>
+					<th>Số lượng</th>
+					<th>Giá</th>
+					<th>Tổng cộng</th>
+					<th>Thao tác</th>
+				</tr>
+			</thead>
+			<tbody>
+				@foreach (var item in listFDetail)
+				{
+					<tr id=" row_@item.bill_id">
+						<td>@item.bill_id</td>
+						<td>@item.food_id</td>
+						<td>@item.amount</td>
+						<td>@item.price</td>
+						<td>@item.total</td>
+						<td>
+							<div class="dropdown">
+								<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+									Thao tác
+									<span class="caret"></span>
+								</button>
+								<ul class="dropdown-menu">
+									<li>
+										@Ajax.ActionLink("Xóa", "Delete", new { @id = item.food_id }, new AjaxOptions
+										{
+											Confirm = "Xác nhận xóa?",
+											OnComplete = "$('#row_" + item.food_id + "').remove()",
+											HttpMethod = "Delete"
+										})
+									</li>
+								</ul>
+							</div>
+						</td>
+					</tr>
+				}
+			</tbody>
+		</table>
+	</div>
+</div>
+<div class="panel panel-warning" data-widget="{&quot;draggable&quot;: &quot;false&quot;}" data-widget-static="">
+	<div class="panel-heading">
+		<h2 class="text-uppercase">Danh sách nước uống đã đặt</h2>
+		<div class="panel-ctrls" data-actions-container="" data-action-collapse="{&quot;target&quot;: &quot;.panel-body&quot;}"><span class="button-icon has-bg"><i class="ti ti-angle-down"></i></span></div>
+	</div>
+	<div class="panel-body no-padding" style="display: block;">
+		<table class="table table-striped">
+			<thead>
+				<tr class="warning">
+					<th>Mã hóa đơn</th>
+					<th>Mã nước uống</th>
+					<th>Số lượng</th>
+					<th>Giá</th>
+					<th>Tổng cộng</th>
+					<th>Thao tác</th>
+				</tr>
+			</thead>
+			<tbody>
+				@foreach (var item in listDDetail)
+				{
+					<tr id=" row_@item.bill_id">
+						<td>@item.bill_id</td>
+						<td>@item.drink_id</td>
+						<td>@item.amount</td>
+						<td>@item.price</td>
+						<td>@item.total</td>
+						<td>
+							<div class="dropdown">
+								<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+									Thao tác
+									<span class="caret"></span>
+								</button>
+								<ul class="dropdown-menu">
+									<li>
+										@Ajax.ActionLink("Xóa", "Delete", new { @id = item.drink_id }, new AjaxOptions
+										{
+											Confirm = "Xác nhận xóa?",
+											OnComplete = "$('#row_" + item.drink_id + "').remove()",
+											HttpMethod = "Delete"
+										})
+									</li>
+								</ul>
+							</div>
+						</td>
+					</tr>
+				}
+			</tbody>
+		</table>
+	</div>
+</div>

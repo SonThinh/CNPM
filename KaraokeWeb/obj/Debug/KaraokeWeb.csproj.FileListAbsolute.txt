@@ -1,0 +1,166 @@
+C:\Users\Son Thinh\Desktop\KaraokeWeb\KaraokeWeb\bin\KaraokeWeb.dll.config
+C:\Users\Son Thinh\Desktop\KaraokeWeb\KaraokeWeb\bin\KaraokeWeb.dll
+C:\Users\Son Thinh\Desktop\KaraokeWeb\KaraokeWeb\bin\KaraokeWeb.pdb
+C:\Users\Son Thinh\Desktop\KaraokeWeb\KaraokeWeb\bin\roslyn\csc.exe
+C:\Users\Son Thinh\Desktop\KaraokeWeb\KaraokeWeb\bin\roslyn\csc.exe.config
+C:\Users\Son Thinh\Desktop\KaraokeWeb\KaraokeWeb\bin\roslyn\csc.rsp
+C:\Users\Son Thinh\Desktop\KaraokeWeb\KaraokeWeb\bin\roslyn\csi.exe
+C:\Users\Son Thinh\Desktop\KaraokeWeb\KaraokeWeb\bin\roslyn\csi.exe.config
+C:\Users\Son Thinh\Desktop\KaraokeWeb\KaraokeWeb\bin\roslyn\csi.rsp
+C:\Users\Son Thinh\Desktop\KaraokeWeb\KaraokeWeb\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Son Thinh\Desktop\KaraokeWeb\KaraokeWeb\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Son Thinh\Desktop\KaraokeWeb\KaraokeWeb\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Son Thinh\Desktop\KaraokeWeb\KaraokeWeb\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Son Thinh\Desktop\KaraokeWeb\KaraokeWeb\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Son Thinh\Desktop\KaraokeWeb\KaraokeWeb\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Son Thinh\Desktop\KaraokeWeb\KaraokeWeb\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Son Thinh\Desktop\KaraokeWeb\KaraokeWeb\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Son Thinh\Desktop\KaraokeWeb\KaraokeWeb\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Son Thinh\Desktop\KaraokeWeb\KaraokeWeb\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Son Thinh\Desktop\KaraokeWeb\KaraokeWeb\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Son Thinh\Desktop\KaraokeWeb\KaraokeWeb\bin\roslyn\System.AppContext.dll
+C:\Users\Son Thinh\Desktop\KaraokeWeb\KaraokeWeb\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Son Thinh\Desktop\KaraokeWeb\KaraokeWeb\bin\roslyn\System.Console.dll
+C:\Users\Son Thinh\Desktop\KaraokeWeb\KaraokeWeb\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Son Thinh\Desktop\KaraokeWeb\KaraokeWeb\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Son Thinh\Desktop\KaraokeWeb\KaraokeWeb\bin\roslyn\System.IO.Compression.dll
+C:\Users\Son Thinh\Desktop\KaraokeWeb\KaraokeWeb\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Son Thinh\Desktop\KaraokeWeb\KaraokeWeb\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Son Thinh\Desktop\KaraokeWeb\KaraokeWeb\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\Son Thinh\Desktop\KaraokeWeb\KaraokeWeb\bin\roslyn\System.IO.Pipes.dll
+C:\Users\Son Thinh\Desktop\KaraokeWeb\KaraokeWeb\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Son Thinh\Desktop\KaraokeWeb\KaraokeWeb\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\Son Thinh\Desktop\KaraokeWeb\KaraokeWeb\bin\roslyn\System.Security.Claims.dll
+C:\Users\Son Thinh\Desktop\KaraokeWeb\KaraokeWeb\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Son Thinh\Desktop\KaraokeWeb\KaraokeWeb\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Son Thinh\Desktop\KaraokeWeb\KaraokeWeb\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Son Thinh\Desktop\KaraokeWeb\KaraokeWeb\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Son Thinh\Desktop\KaraokeWeb\KaraokeWeb\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\Son Thinh\Desktop\KaraokeWeb\KaraokeWeb\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Son Thinh\Desktop\KaraokeWeb\KaraokeWeb\bin\roslyn\System.ValueTuple.dll
+C:\Users\Son Thinh\Desktop\KaraokeWeb\KaraokeWeb\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Son Thinh\Desktop\KaraokeWeb\KaraokeWeb\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Son Thinh\Desktop\KaraokeWeb\KaraokeWeb\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Son Thinh\Desktop\KaraokeWeb\KaraokeWeb\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Son Thinh\Desktop\KaraokeWeb\KaraokeWeb\bin\roslyn\vbc.exe
+C:\Users\Son Thinh\Desktop\KaraokeWeb\KaraokeWeb\bin\roslyn\vbc.exe.config
+C:\Users\Son Thinh\Desktop\KaraokeWeb\KaraokeWeb\bin\roslyn\vbc.rsp
+C:\Users\Son Thinh\Desktop\KaraokeWeb\KaraokeWeb\bin\roslyn\VBCSCompiler.exe
+C:\Users\Son Thinh\Desktop\KaraokeWeb\KaraokeWeb\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Son Thinh\Desktop\KaraokeWeb\KaraokeWeb\bin\Antlr3.Runtime.dll
+C:\Users\Son Thinh\Desktop\KaraokeWeb\KaraokeWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Son Thinh\Desktop\KaraokeWeb\KaraokeWeb\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Son Thinh\Desktop\KaraokeWeb\KaraokeWeb\bin\Newtonsoft.Json.dll
+C:\Users\Son Thinh\Desktop\KaraokeWeb\KaraokeWeb\bin\System.Web.Helpers.dll
+C:\Users\Son Thinh\Desktop\KaraokeWeb\KaraokeWeb\bin\System.Web.Mvc.dll
+C:\Users\Son Thinh\Desktop\KaraokeWeb\KaraokeWeb\bin\System.Web.Optimization.dll
+C:\Users\Son Thinh\Desktop\KaraokeWeb\KaraokeWeb\bin\System.Web.Razor.dll
+C:\Users\Son Thinh\Desktop\KaraokeWeb\KaraokeWeb\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Son Thinh\Desktop\KaraokeWeb\KaraokeWeb\bin\System.Web.WebPages.dll
+C:\Users\Son Thinh\Desktop\KaraokeWeb\KaraokeWeb\bin\System.Web.WebPages.Razor.dll
+C:\Users\Son Thinh\Desktop\KaraokeWeb\KaraokeWeb\bin\WebGrease.dll
+C:\Users\Son Thinh\Desktop\KaraokeWeb\KaraokeWeb\bin\System.Web.Helpers.xml
+C:\Users\Son Thinh\Desktop\KaraokeWeb\KaraokeWeb\bin\System.Web.Mvc.xml
+C:\Users\Son Thinh\Desktop\KaraokeWeb\KaraokeWeb\bin\System.Web.Optimization.xml
+C:\Users\Son Thinh\Desktop\KaraokeWeb\KaraokeWeb\bin\System.Web.Razor.xml
+C:\Users\Son Thinh\Desktop\KaraokeWeb\KaraokeWeb\bin\System.Web.WebPages.xml
+C:\Users\Son Thinh\Desktop\KaraokeWeb\KaraokeWeb\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Son Thinh\Desktop\KaraokeWeb\KaraokeWeb\bin\System.Web.WebPages.Razor.xml
+C:\Users\Son Thinh\Desktop\KaraokeWeb\KaraokeWeb\bin\Newtonsoft.Json.xml
+C:\Users\Son Thinh\Desktop\KaraokeWeb\KaraokeWeb\bin\Antlr3.Runtime.pdb
+C:\Users\Son Thinh\Desktop\KaraokeWeb\KaraokeWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Son Thinh\Desktop\KaraokeWeb\KaraokeWeb\obj\Debug\KaraokeWeb.csprojAssemblyReference.cache
+C:\Users\Son Thinh\Desktop\KaraokeWeb\KaraokeWeb\obj\Debug\KaraokeWeb.csproj.CopyComplete
+C:\Users\Son Thinh\Desktop\KaraokeWeb\KaraokeWeb\obj\Debug\KaraokeWeb.dll
+C:\Users\Son Thinh\Desktop\KaraokeWeb\KaraokeWeb\obj\Debug\KaraokeWeb.pdb
+C:\Users\Son Thinh\Desktop\KaraokeWeb\KaraokeWeb\bin\EntityFramework.dll
+C:\Users\Son Thinh\Desktop\KaraokeWeb\KaraokeWeb\bin\EntityFramework.SqlServer.dll
+C:\Users\Son Thinh\Desktop\KaraokeWeb\KaraokeWeb\bin\EntityFramework.xml
+C:\Users\Son Thinh\Desktop\KaraokeWeb\KaraokeWeb\bin\EntityFramework.SqlServer.xml
+C:\Users\Son Thinh\Desktop\KaraokeWeb\KaraokeWeb\bin\PagedList.dll
+C:\Users\Son Thinh\Desktop\KaraokeWeb\KaraokeWeb\bin\PagedList.Mvc.dll
+C:\Users\Son Thinh\Desktop\KaraokeWeb\KaraokeWeb\bin\PagedList.xml
+C:\Users\Son Thinh\Desktop\KaraokeWeb\KaraokeWeb\bin\PagedList.Mvc.xml
+D:\study\2019\cdcnpm\KaraokeWeb\KaraokeWeb\bin\KaraokeWeb.dll.config
+D:\study\2019\cdcnpm\KaraokeWeb\KaraokeWeb\bin\KaraokeWeb.dll
+D:\study\2019\cdcnpm\KaraokeWeb\KaraokeWeb\bin\KaraokeWeb.pdb
+D:\study\2019\cdcnpm\KaraokeWeb\KaraokeWeb\bin\roslyn\csc.exe
+D:\study\2019\cdcnpm\KaraokeWeb\KaraokeWeb\bin\roslyn\csc.exe.config
+D:\study\2019\cdcnpm\KaraokeWeb\KaraokeWeb\bin\roslyn\csc.rsp
+D:\study\2019\cdcnpm\KaraokeWeb\KaraokeWeb\bin\roslyn\csi.exe
+D:\study\2019\cdcnpm\KaraokeWeb\KaraokeWeb\bin\roslyn\csi.exe.config
+D:\study\2019\cdcnpm\KaraokeWeb\KaraokeWeb\bin\roslyn\csi.rsp
+D:\study\2019\cdcnpm\KaraokeWeb\KaraokeWeb\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\study\2019\cdcnpm\KaraokeWeb\KaraokeWeb\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\study\2019\cdcnpm\KaraokeWeb\KaraokeWeb\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\study\2019\cdcnpm\KaraokeWeb\KaraokeWeb\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\study\2019\cdcnpm\KaraokeWeb\KaraokeWeb\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\study\2019\cdcnpm\KaraokeWeb\KaraokeWeb\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\study\2019\cdcnpm\KaraokeWeb\KaraokeWeb\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\study\2019\cdcnpm\KaraokeWeb\KaraokeWeb\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\study\2019\cdcnpm\KaraokeWeb\KaraokeWeb\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\study\2019\cdcnpm\KaraokeWeb\KaraokeWeb\bin\roslyn\Microsoft.Managed.Core.targets
+D:\study\2019\cdcnpm\KaraokeWeb\KaraokeWeb\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\study\2019\cdcnpm\KaraokeWeb\KaraokeWeb\bin\roslyn\System.AppContext.dll
+D:\study\2019\cdcnpm\KaraokeWeb\KaraokeWeb\bin\roslyn\System.Collections.Immutable.dll
+D:\study\2019\cdcnpm\KaraokeWeb\KaraokeWeb\bin\roslyn\System.Console.dll
+D:\study\2019\cdcnpm\KaraokeWeb\KaraokeWeb\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\study\2019\cdcnpm\KaraokeWeb\KaraokeWeb\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\study\2019\cdcnpm\KaraokeWeb\KaraokeWeb\bin\roslyn\System.IO.Compression.dll
+D:\study\2019\cdcnpm\KaraokeWeb\KaraokeWeb\bin\roslyn\System.IO.FileSystem.dll
+D:\study\2019\cdcnpm\KaraokeWeb\KaraokeWeb\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\study\2019\cdcnpm\KaraokeWeb\KaraokeWeb\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\study\2019\cdcnpm\KaraokeWeb\KaraokeWeb\bin\roslyn\System.IO.Pipes.dll
+D:\study\2019\cdcnpm\KaraokeWeb\KaraokeWeb\bin\roslyn\System.Reflection.Metadata.dll
+D:\study\2019\cdcnpm\KaraokeWeb\KaraokeWeb\bin\roslyn\System.Security.AccessControl.dll
+D:\study\2019\cdcnpm\KaraokeWeb\KaraokeWeb\bin\roslyn\System.Security.Claims.dll
+D:\study\2019\cdcnpm\KaraokeWeb\KaraokeWeb\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\study\2019\cdcnpm\KaraokeWeb\KaraokeWeb\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\study\2019\cdcnpm\KaraokeWeb\KaraokeWeb\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\study\2019\cdcnpm\KaraokeWeb\KaraokeWeb\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\study\2019\cdcnpm\KaraokeWeb\KaraokeWeb\bin\roslyn\System.Security.Principal.Windows.dll
+D:\study\2019\cdcnpm\KaraokeWeb\KaraokeWeb\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\study\2019\cdcnpm\KaraokeWeb\KaraokeWeb\bin\roslyn\System.ValueTuple.dll
+D:\study\2019\cdcnpm\KaraokeWeb\KaraokeWeb\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\study\2019\cdcnpm\KaraokeWeb\KaraokeWeb\bin\roslyn\System.Xml.XmlDocument.dll
+D:\study\2019\cdcnpm\KaraokeWeb\KaraokeWeb\bin\roslyn\System.Xml.XPath.dll
+D:\study\2019\cdcnpm\KaraokeWeb\KaraokeWeb\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\study\2019\cdcnpm\KaraokeWeb\KaraokeWeb\bin\roslyn\vbc.exe
+D:\study\2019\cdcnpm\KaraokeWeb\KaraokeWeb\bin\roslyn\vbc.exe.config
+D:\study\2019\cdcnpm\KaraokeWeb\KaraokeWeb\bin\roslyn\vbc.rsp
+D:\study\2019\cdcnpm\KaraokeWeb\KaraokeWeb\bin\roslyn\VBCSCompiler.exe
+D:\study\2019\cdcnpm\KaraokeWeb\KaraokeWeb\bin\roslyn\VBCSCompiler.exe.config
+D:\study\2019\cdcnpm\KaraokeWeb\KaraokeWeb\bin\Antlr3.Runtime.dll
+D:\study\2019\cdcnpm\KaraokeWeb\KaraokeWeb\bin\EntityFramework.dll
+D:\study\2019\cdcnpm\KaraokeWeb\KaraokeWeb\bin\EntityFramework.SqlServer.dll
+D:\study\2019\cdcnpm\KaraokeWeb\KaraokeWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\study\2019\cdcnpm\KaraokeWeb\KaraokeWeb\bin\Microsoft.Web.Infrastructure.dll
+D:\study\2019\cdcnpm\KaraokeWeb\KaraokeWeb\bin\Newtonsoft.Json.dll
+D:\study\2019\cdcnpm\KaraokeWeb\KaraokeWeb\bin\PagedList.dll
+D:\study\2019\cdcnpm\KaraokeWeb\KaraokeWeb\bin\PagedList.Mvc.dll
+D:\study\2019\cdcnpm\KaraokeWeb\KaraokeWeb\bin\System.Web.Helpers.dll
+D:\study\2019\cdcnpm\KaraokeWeb\KaraokeWeb\bin\System.Web.Mvc.dll
+D:\study\2019\cdcnpm\KaraokeWeb\KaraokeWeb\bin\System.Web.Optimization.dll
+D:\study\2019\cdcnpm\KaraokeWeb\KaraokeWeb\bin\System.Web.Razor.dll
+D:\study\2019\cdcnpm\KaraokeWeb\KaraokeWeb\bin\System.Web.WebPages.Deployment.dll
+D:\study\2019\cdcnpm\KaraokeWeb\KaraokeWeb\bin\System.Web.WebPages.dll
+D:\study\2019\cdcnpm\KaraokeWeb\KaraokeWeb\bin\System.Web.WebPages.Razor.dll
+D:\study\2019\cdcnpm\KaraokeWeb\KaraokeWeb\bin\WebGrease.dll
+D:\study\2019\cdcnpm\KaraokeWeb\KaraokeWeb\bin\EntityFramework.xml
+D:\study\2019\cdcnpm\KaraokeWeb\KaraokeWeb\bin\EntityFramework.SqlServer.xml
+D:\study\2019\cdcnpm\KaraokeWeb\KaraokeWeb\bin\PagedList.xml
+D:\study\2019\cdcnpm\KaraokeWeb\KaraokeWeb\bin\PagedList.Mvc.xml
+D:\study\2019\cdcnpm\KaraokeWeb\KaraokeWeb\bin\System.Web.Helpers.xml
+D:\study\2019\cdcnpm\KaraokeWeb\KaraokeWeb\bin\System.Web.Mvc.xml
+D:\study\2019\cdcnpm\KaraokeWeb\KaraokeWeb\bin\System.Web.Optimization.xml
+D:\study\2019\cdcnpm\KaraokeWeb\KaraokeWeb\bin\System.Web.Razor.xml
+D:\study\2019\cdcnpm\KaraokeWeb\KaraokeWeb\bin\System.Web.WebPages.xml
+D:\study\2019\cdcnpm\KaraokeWeb\KaraokeWeb\bin\System.Web.WebPages.Deployment.xml
+D:\study\2019\cdcnpm\KaraokeWeb\KaraokeWeb\bin\System.Web.WebPages.Razor.xml
+D:\study\2019\cdcnpm\KaraokeWeb\KaraokeWeb\bin\Newtonsoft.Json.xml
+D:\study\2019\cdcnpm\KaraokeWeb\KaraokeWeb\bin\Antlr3.Runtime.pdb
+D:\study\2019\cdcnpm\KaraokeWeb\KaraokeWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\study\2019\cdcnpm\KaraokeWeb\KaraokeWeb\obj\Debug\KaraokeWeb.csprojAssemblyReference.cache
+D:\study\2019\cdcnpm\KaraokeWeb\KaraokeWeb\obj\Debug\KaraokeWeb.csproj.CopyComplete
+D:\study\2019\cdcnpm\KaraokeWeb\KaraokeWeb\obj\Debug\KaraokeWeb.dll
+D:\study\2019\cdcnpm\KaraokeWeb\KaraokeWeb\obj\Debug\KaraokeWeb.pdb

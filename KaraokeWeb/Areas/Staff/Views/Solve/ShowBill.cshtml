@@ -1,0 +1,68 @@
+﻿
+@{
+	ViewBag.Title = "ShowBill";
+	Layout = "~/Areas/Staff/Views/Shared/_Layouts.cshtml";
+	var listBill = (List<KaraokeWeb.Models.EF.Bill>)ViewBag.bill;
+	var listFDetail = (List<KaraokeWeb.Models.EF.Food_Detail>)ViewBag.fDetail;
+	var listDDetail = (List<KaraokeWeb.Models.EF.Drink_Detail>)ViewBag.dDetail;
+}
+
+@section header{
+
+}
+<div class="panel panel-warning" data-widget="{&quot;draggable&quot;: &quot;false&quot;}" data-widget-static="">
+	<div class="panel-heading">
+		<h2 class="text-uppercase">Hóa đơn</h2>
+		<div class="panel-ctrls" data-actions-container="" data-action-collapse="{&quot;target&quot;: &quot;.panel-body&quot;}"><span class="button-icon has-bg"><i class="ti ti-angle-down"></i></span></div>
+	</div>
+	<div class="panel-body no-padding" style="display: block;">
+		<table class="table table-striped">
+			<thead>
+				<tr class="warning">
+					<th>Mã hóa đơn</th>
+					<th>Mã món ăn</th>
+					<th>Số lượng</th>
+					<th>Giá</th>
+					<th>Tổng tiền thức ăn</th>
+				</tr>
+			</thead>
+			<tbody>
+				@foreach (var item in listFDetail)
+				{
+					<tr id=" row_@item.bill_id">
+						<td>@item.bill_id</td>
+						<td>@item.food_id</td>
+						<td>@item.amount</td>
+						<td>@item.price VND</td>
+						<td>@item.total VND</td>
+					</tr>
+				}
+			</tbody>
+
+			<thead>
+				<tr class="warning">
+					<th>Mã hóa đơn</th>
+					<th>Mã nước uống</th>
+					<th>Số lượng</th>
+					<th>Giá</th>
+					<th>Tổng tiền nước uống</th>
+				</tr>
+			</thead>
+			<tbody>
+				@foreach (var item in listDDetail)
+				{
+					<tr id=" row_@item.bill_id">
+						<td>@item.bill_id</td>
+						<td>@item.drink_id</td>
+						<td>@item.amount</td>
+						<td>@item.price VND</td>
+						<td>@item.total VND</td>
+					</tr>
+				}
+			</tbody>
+		</table>
+	</div>
+</div>
+
+
+

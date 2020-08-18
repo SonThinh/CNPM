@@ -1,0 +1,49 @@
+﻿@model PagedList.IPagedList<KaraokeWeb.Models.EF.Bill>
+@using PagedList.Mvc;
+@{
+	ViewBag.Title = "Index";
+	Layout = "~/Areas/Admin/Views/Shared/_Layouts.cshtml";
+}
+@section header{
+}
+<div class="panel panel-warning" data-widget="{&quot;draggable&quot;: &quot;false&quot;}" data-widget-static="">
+	<div class="panel-heading">
+		<h2 class="text-uppercase">Danh sách hóa đơn</h2>
+		<div class="panel-ctrls" data-actions-container="" data-action-collapse="{&quot;target&quot;: &quot;.panel-body&quot;}"><span class="button-icon has-bg"><i class="ti ti-angle-down"></i></span></div>
+	</div>
+	<div class="panel-body no-padding" style="display: block;">
+		<table class="table table-striped">
+			<thead>
+				<tr class="warning">
+					<th>STT</th>
+					<th>Số điện thoại khách hàng</th>
+					<th>Tên phòng</th>
+					<th>Mã nhân viên</th>
+					<th>Thời gian sử dụng</th>
+					<th>Ngày tạo</th>
+					<th>Giá phòng</th>
+					<th>Tổng tiền phòng</th>
+					<th>Tổng hóa đơn</th>
+				</tr>
+			</thead>
+			<tbody>
+				@foreach (var item in Model)
+				{
+					<tr id=" row_@item.bill_id">
+						<td>@item.bill_id</td>
+						<td>@item.user_phone</td>
+						<td>@item.room_id</td>
+						<td>@item.id_staff</td>
+						<td>@item.used_time</td>
+						<td>@item.created_at</td>
+						<td>@item.price VND</td>
+						<td>@item.total_room VND</td>
+						<td>@item.total VND</td>
+					</tr>
+				}
+			</tbody>
+		</table>
+		@Html.PagedListPager(Model, page => Url.Action("Index", new { page}))
+	</div>
+</div>
+

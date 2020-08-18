@@ -1,0 +1,139 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Mod </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+	<!-- Bootstrap Core CSS -->
+	<link href="/assets/admin/css/bootstrap.min.css" rel='stylesheet' type='text/css' />
+	<!-- Custom CSS -->
+	<link href="/assets/admin/css/style.css" rel='stylesheet' type='text/css' />
+	<!-- Graph CSS -->
+	<link href="/assets/admin/css/font-awesome.css" rel="stylesheet">
+	<!-- jQuery -->
+	<script src="/assets/admin/js/jquery-1.10.2.min.js"></script>
+	<!-- lined-icons -->
+	<link rel="stylesheet" href="/assets/admin/css/icon-font.min.css" type='text/css' />
+	<!-- //lined-icons -->
+	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<!-- chart -->
+	<script src="/assets/admin/js/Chart.js"></script>
+	<!-- //chart -->
+	<!--animate-->
+	<link href="/assets/admin/css/animate.css" rel="stylesheet" type="text/css" media="all">
+	<script src="/assets/admin/js/wow.min.js"></script>
+	<script>
+		new WOW().init();
+	</script>
+	<!--//end-animate-->
+	<!----webfonts--->
+	<link href='//fonts.googleapis.com/css?family=Cabin:400,400italic,500,500italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
+	<!---//webfonts--->
+	<!-- Meters graphs -->s
+	<!-- Placed js at the end of the document so the pages load faster -->
+
+</head>
+
+<body class="sticky-header left-side-collapsed">
+	<section>
+		<!-- left side start-->
+		<div class="left-side sticky-left-side">
+
+			<!--logo and iconic logo start-->
+			<div class="logo">
+				<h1><a href="/Staff/Home"><span>Mod</span></a></h1>
+			</div>
+			<div class="logo-icon text-center">
+				<a href="/Staff/Home"><i class="lnr lnr-home"></i></a>
+			</div>
+
+			<!--logo and iconic logo end-->
+			<div class="left-side-inner">
+				<!--sidebar nav start-->
+				<ul class="nav nav-pills nav-stacked custom-nav">
+					<li><a href="/Staff/Home"><i class="lnr lnr-power-switch"></i><span>Đặt phòng</span></a></li>
+					<li class="menu-list">
+						<a href="#"><i class="lnr lnr-cart"></i><span>Hóa đơn</span></a>
+						<ul class="sub-menu-list">
+							<li>@Html.ActionLink("Danh sách hóa đơn", "Index", "Book")</li>
+						</ul>
+					</li>
+				</ul>
+
+				<!--sidebar nav end-->
+			</div>
+		</div>
+		<!-- left side end-->
+		<!-- main content start-->
+		<div class="main-content">
+			<!-- header-starts -->
+			<div class="header-section">
+
+				<!--toggle button start-->
+				<a class="toggle-btn  menu-collapsed"><i class="fa fa-bars"></i></a>
+				<!--toggle button end-->
+				<!--notification menu start -->
+				<div class="menu-right">
+					<div class="user-panel-top">
+						<div class="profile_details_left">
+							<ul>
+								<li class="dropdown profile_details_drop">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+										<div class="profile_img">
+											<div class="user-name">
+												<p>MOD<span></span></p>
+											</div>
+											<i class="lnr lnr-chevron-down"></i>
+											<i class="lnr lnr-chevron-up"></i>
+											<div class="clearfix"></div>
+										</div>
+									</a>
+									<ul class="dropdown-menu drp-mnu">
+										<li> <a href="/Staff/Login/Logout"><i class="fa fa-sign-out"></i> Logout</a> </li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!--notification menu end -->
+			</div>
+			<!-- //header-ends -->
+			<div id="page-wrapper">
+				@RenderSection("header", required: true)
+
+				<div class="graphs">
+					@if (TempData["AlertMessage"] != null)
+					{
+						<div id="AlertBox" class=" alert @TempData["AlertType"] hide">
+							@TempData["AlertMessage"]
+						</div>
+					}
+
+					@RenderBody()
+				</div>
+				<!--body wrapper start-->
+			</div>
+			<!--body wrapper end-->
+		</div>
+		<!--footer section start-->
+		<footer>
+			<p>&copy 2019 Employess. All Rights Reserved | Design by <a href="" target="_blank">PST</a></p>
+		</footer>
+		<!--footer section end-->
+		<!-- main content end-->
+	</section>
+	<script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+	<script src="/assets/admin/js/jquery.nicescroll.js"></script>
+	<script src="/assets/admin/js/scripts.js"></script>
+
+	<script src="~/assets/admin/js/plugins/ckfinder/ckfinder.js"></script>
+
+	<script src="/assets/admin/js/plugins/ckeditor/ckeditor.js"></script>
+	<!-- Bootstrap Core JavaScript -->
+	<script src="/assets/admin/js/bootstrap.min.js"></script>
+	<script src="/assets/admin/js/sb-admin-2.js"></script>
+	@RenderSection("jsFooter", required: false)
+</body>
+</html>

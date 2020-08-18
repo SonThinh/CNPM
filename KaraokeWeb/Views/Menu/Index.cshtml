@@ -1,0 +1,39 @@
+﻿
+@{
+	ViewBag.Title = "Index";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+	var listmenu = (List<KaraokeWeb.Models.EF.Menu>)ViewBag.menu;
+}
+@section inner{
+	<!-- inner page banner -->
+	<section class="inner_banner">
+		<div class="dot1">
+		</div>
+	</section>
+	<!-- inner page banner -->
+}
+<h1 class="heading text-center text-uppercase mb-5"> Thực đơn </h1>
+<div class="inner_sec">
+
+
+
+	<ul class="portfolio-arear">
+		@foreach (var item in listmenu)
+		{
+			<li class="portfolio-item2 mb-2" data-id="id-0" data-type="cat-item-@item.id">
+				<div>
+					<span class="image-block img-hover">
+						<a class="image-zoom" href="@item.images" rel="prettyPhoto[gallery]">
+
+							<img src="@item.images" class="img-responsive" alt="@item.kind">
+						</a>
+					</span>
+				</div>
+			</li>
+		}
+
+	</ul>
+	<!--end portfolio-area -->
+
+	<div class="clearfix"></div>
+</div>

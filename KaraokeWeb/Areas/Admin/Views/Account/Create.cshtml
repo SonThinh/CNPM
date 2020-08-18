@@ -1,0 +1,72 @@
+﻿@model KaraokeWeb.Models.EF.Account
+
+@{
+	ViewBag.Title = "Tạo tài khoản";
+	Layout = "~/Areas/Admin/Views/Shared/_Layouts.cshtml";
+}
+
+@section header{
+
+}
+	<div class="sign-up">
+		@using (Html.BeginForm("Create", "Account", FormMethod.Post))
+		{
+			@Html.AntiForgeryToken()
+			<h3 class="text-uppercase">đăng ký tài khoản</h3>
+			<p class="creating">
+				Đăng ký tài khoản thành viên (chỉ Admin được đăng ký)
+			</p>
+
+			<h6>Thông tin tài khoản</h6>
+			@Html.ValidationSummary(true, "", new { @class = "text-danger" })
+			<div class="form-group">
+				<div class="sign-u">
+					<div class="sign-up1">
+						<h4>Tài khoản* :</h4>
+					</div>
+					<div class="sign-up2">
+						@Html.TextBoxFor(model => model.username, new { @class = "form-control" })
+						@Html.ValidationMessageFor(model => model.username, "", new { @class = "text-danger" })
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="sign-u">
+					<div class="sign-up1">
+						<h4>Mật khẩu* :</h4>
+					</div>
+					<div class="sign-up2">
+						@Html.PasswordFor(model => model.password, new { @class = "form-control" })
+						@Html.ValidationMessageFor(model => model.password, "", new { @class = "text-danger" })
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="sign-u">
+					<div class="sign-up1">
+						<h4>Loại người dùng* :</h4>
+					</div>
+					<div class="sign-up2">
+						@Html.TextBoxFor(model => model.user_type, new {type="number", @class = "form-control" })
+						<p class="creating">
+							(số 1 là nhân viên)
+						</p>
+						@Html.ValidationMessageFor(model => model.password, "", new { @class = "text-danger" })
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+			<div class="sub_home">
+				<div class="sub_home_left">
+					<button type="submit">Tạo tài khoản</button>
+				</div>
+				<div class="sub_home_right">
+					@Html.ActionLink("Quay lại trang chủ", "Index", "Account")
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		}
+	</div>
+

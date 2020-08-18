@@ -1,0 +1,47 @@
+﻿@{
+	ViewBag.Title = "ShowRoom";
+	Layout = "~/Areas/Staff/Views/Shared/_Layouts.cshtml";
+	var listRoom = (List<KaraokeWeb.Models.EF.Room>)ViewBag.room;
+}
+@section header{
+
+}
+<h1 class="heading text-center text-uppercase mb-5"> Danh sách phòng </h1>
+
+<div class="inner_sec">
+	<ul class="portfolio-area1">
+		@foreach (var item in listRoom)
+		{
+			<li class="portfolio-item2 mb-2">
+				<div>
+					<span>
+						<h2 class="text-uppercase">@item.room_name</h2>
+						<img src="@item.image" alt="@item.room_name" style="width: 300px">
+						<div class="port-info">
+							<p>
+								Trạng thái:
+								@if (item.r_status == 0)
+								{
+									<td>Trống</td><br />
+									<button class="btn-success"><a href="/Staff/Book/AddBill/@item.room_id">Đặt phòng</a></button>
+									<button class="btn-success"><a href="/Staff/Book/AddReserve/@item.room_id">Đặt trước</a></button>
+								}
+								else if (item.r_status == 1)
+								{
+									<td>Đang sử dụng</td><br />
+									<button class="btn-success"><a href="/Staff/Karaoke/Cancel/@item.room_id">Hủy trạng thái</a></button>
+								}
+								else
+								{
+									<td>Đã đặt trước</td><br />
+									<button class="btn-success"><a href="/Staff/Karaoke/Cancel/@item.room_id">Hủy trạng thái</a></button>
+								}
+							</p>
+						</div>
+				</span>
+				</div>
+			</li>
+		}
+	</ul>
+	<div class="clearfix"></div>
+</div>

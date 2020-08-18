@@ -1,0 +1,121 @@
+﻿@model KaraokeWeb.Models.EF.Room
+
+@{
+	ViewBag.Title = "Create";
+	Layout = "~/Areas/Admin/Views/Shared/_Layouts.cshtml";
+}
+
+@section header{
+
+}
+@section jsFooter{
+	<script>
+		$('#btnSelectImage').on('click', function (e) {
+			e.preventDefault();
+			var finder = new CKFinder();
+			finder.selectActionFunction = function (url) {
+				$('#txtImage').val(url);
+			};
+			finder.popup();
+		})
+	</script>
+}
+<div class="sign-up">
+	@using (Html.BeginForm("Create", "Room", FormMethod.Post))
+	{
+		@Html.AntiForgeryToken()
+		<h3 class="text-uppercase">Tạo Phòng</h3>
+		<p class="creating">
+			Tạo phòng (chỉ Admin được tạo)
+		</p>
+
+		<h6>Thông tin phòng</h6>
+		@Html.ValidationSummary(true, "", new { @class = "text-danger" })
+		<div class="form-group">
+			<div class="sign-u">
+				<div class="sign-up1">
+					<h4>Tên phòng* :</h4>
+				</div>
+				<div class="sign-up2">
+					@Html.TextBoxFor(model => model.room_name, new { @class = "form-control" })
+					@Html.ValidationMessageFor(model => model.room_name, "", new { @class = "text-danger" })
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+		<div class="form-group">
+			<div class="sign-u">
+				<div class="sign-up1">
+					<h4>Tên quán karaoke* :</h4>
+				</div>
+				<div class="sign-up2">
+					@Html.DropDownListFor(model => model.kara_id, null, new { @class = "form-control", id = "dropdown" })
+					@Html.ValidationMessageFor(model => model.kara_id, "", new { @class = "text-danger" })
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+		<div class="form-group">
+			<div class="sign-u">
+				<div class="sign-up1">
+					<h4>Giá* :</h4>
+				</div>
+				<div class="sign-up2">
+					@Html.TextBoxFor(model => model.price, new { @class = "form-control" })
+					@Html.ValidationMessageFor(model => model.price, "", new { @class = "text-danger" })
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+		<div class="form-group">
+			<div class="sign-u">
+				<div class="sign-up1">
+					<h4>Sức chứa* :</h4>
+				</div>
+				<div class="sign-up2">
+					@Html.TextBoxFor(model => model.capacity, new { @class = "form-control" })
+					@Html.ValidationMessageFor(model => model.capacity, "", new { @class = "text-danger" })
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+		<div class="form-group">
+			<div class="sign-u">
+				<div class="sign-up1">
+					<h4>Hình ảnh* :</h4>
+				</div>
+				<div class="sign-up2">
+					@Html.TextBoxFor(model => model.image, new { @class = "form-control", id = "txtImage" })
+					<a id="btnSelectImage" href="#">Chọn ảnh</a>
+					@Html.ValidationMessageFor(model => model.image, "", new { @class = "text-danger" })
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+		<div class="form-group">
+			<div class="sign-u">
+				<div class="sign-up1">
+					<h4>Trạng thái* :</h4>
+				</div>
+				<div class="sign-up2">
+					@Html.TextBoxFor(model => model.status, new { @class = "form-control" })
+					<p class="creating">
+						(Số 1 là còn sử dụng , số 0 là ngửng sử dụng)
+					</p>
+					@Html.ValidationMessageFor(model => model.status, "", new { @class = "text-danger" })
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+		<div class="sub_home">
+			<div class="sub_home_left">
+				<button type="submit">Tạo</button>
+			</div>
+			<div class="sub_home_right">
+				@Html.ActionLink("Quay lại trang chủ", "Index", "Room")
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	}
+</div>
+

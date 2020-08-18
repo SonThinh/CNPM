@@ -1,0 +1,88 @@
+﻿@model PagedList.IPagedList<KaraokeWeb.Models.EF.Account>
+@using PagedList.Mvc;
+
+@{
+	ViewBag.Title = "Danh sách các tài khoản";
+	Layout = "~/Areas/Admin/Views/Shared/_Layouts.cshtml";
+}
+
+@section header{
+	<ul class="nofitications-dropdown">
+		<li class="login_box" id="loginContainer">
+			<div class="search-box">
+				<div id="sb-search" class="sb-search">
+					@using (Html.BeginForm("Index","Account",FormMethod.Get))
+					{
+						<input class="sb-search-input" placeholder="Nhập từ khóa" type="search" id="search" name="search" value="@ViewBag.search">
+						<input class="sb-search-submit" type="submit" value="">
+						<span class="sb-icon-search"> </span>
+					}
+				</div>
+			</div>
+			<!-- search-scripts -->
+			<script src="/assets/admin/js/classie.js"></script>
+			<script src="/assets/admin/js/uisearch.js"></script>
+			<script>
+				new UISearch(document.getElementById('sb-search'));
+			</script>
+			<!-- //search-scripts -->
+		</li>
+	</ul>
+}
+<div class="panel panel-warning" data-widget="{&quot;draggable&quot;: &quot;false&quot;}" data-widget-static="">
+	<div class="panel-heading">
+		<h2 class="text-uppercase">Danh sách tài khoản</h2>
+		<div class="panel-ctrls" data-actions-container="" data-action-collapse="{&quot;target&quot;: &quot;.panel-body&quot;}"><span class="button-icon has-bg"><i class="ti ti-angle-down"></i></span></div>
+	</div>
+	<div class="panel-body no-padding" style="display: block;">
+		<table class="table table-striped">
+			<thead>
+				<tr class="warning">
+					<th>STT</th>
+					<th>Tài khoản</th>
+					<th>Mật khẩu</th>
+					<th>Loại tài khoản</th>
+				</tr>
+			</thead>
+			<tbody>
+				@foreach (var item in Model)
+				{
+					<tr id=" row_@item.id">
+						<td>@item.id</td>
+						<td>@item.username</td>
+						<td>@item.password</td>
+						@if (item.user_type == 1)
+						{
+							<td>Nhân viên</td>
+						}
+						else
+						{
+							<td>Lỗi</td>
+						}
+						<td>
+							<div class="dropdown">
+								<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+									Thao tác
+									<span class="caret"></span>
+								</button>
+								<ul class="dropdown-menu">
+									<li><a href="/Admin/Account/Update/@item.id">Sửa</a></li>
+									<li>
+										@Ajax.ActionLink("Xóa", "Delete", new { @id = item.id }, new AjaxOptions
+										{
+											Confirm = "Xác nhận xóa?",
+											OnComplete = "$('#row_" + item.id + "').remove()",
+											HttpMethod = "Delete"
+										})
+									</li>
+								</ul>
+							</div>
+						</td>
+					</tr>
+				}
+			</tbody>
+		</table>
+		@Html.PagedListPager(Model, page => Url.Action("Index", new { page,@search = @ViewBag.search }))
+	</div>
+</div>
+

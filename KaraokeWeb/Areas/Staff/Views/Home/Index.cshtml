@@ -1,0 +1,21 @@
+﻿@{
+	ViewBag.Title = "Index";
+	Layout = "~/Areas/Staff/Views/Shared/_Layouts.cshtml";
+	var listKara = (List<KaraokeWeb.Models.EF.Karaoke>)ViewBag.kara;
+}
+@section header{
+	
+}
+<h1 class="heading text-center text-uppercase mb-5"> Danh sách karaoke </h1>
+
+<ul class="portfolio-area">
+	@foreach (var item in listKara)
+	{
+		<li>
+			<a href="/Staff/Karaoke/ShowRoom/@item.kara_id">
+				<h2 class="text-uppercase">@item.kara_name</h2>
+				<img src="@item.images" alt="@item.kara_name">
+			</a>
+		</li>
+	}
+</ul>

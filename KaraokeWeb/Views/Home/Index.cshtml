@@ -1,0 +1,124 @@
+﻿@{
+	ViewBag.Title = "Index";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+	var listRoom = (List<KaraokeWeb.Models.EF.Room>)ViewBag.room;
+	var listKara = (List<KaraokeWeb.Models.EF.Karaoke>)ViewBag.kara;
+}
+@section slide{
+	<!--Slider-->
+	<div class="slider">
+		<div class="callbacks_container">
+			<ul class="rslides" id="slider3">
+				<li>
+					<div class="slider-img1">
+						<div class="dot">
+							<div class="container">
+								<div class="slider_banner_info_w3ls text-center">
+									<h1 class="text-uppercase">Karaoke</h1>
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="slider-img2">
+						<div class="dot">
+							<div class="container">
+								<div class="slider_banner_info_w3ls text-center">
+									<h2 class="text-uppercase">Nhà hàng</h2>
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="slider-img3">
+						<div class="dot">
+							<div class="container">
+								<div class="slider_banner_info_w3ls text-center">
+									<h4 class="text-uppercase">Tiện nghi</h4>
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+	<!--//Slider-->
+}
+
+<h1 class="heading text-center text-uppercase mb-5"> Danh sách phòng </h1>
+<div class="inner_sec">
+	<ul class="portfolio-categ filter">
+		<li class="port-filter all active">
+			<a href="#">Tất cả</a>
+		</li>
+		<li class="cat-item-1">
+			<a href="#" title="Category 1" class="text-uppercase">Kingdom</a>
+		</li>
+		<li class="cat-item-2">
+			<a href="#" title="Category 2" class="text-uppercase">Kingdom 1</a>
+		</li>
+	</ul>
+
+	<ul class="portfolio-area">
+		@foreach (var item in listRoom)
+		{
+			<li class="portfolio-item2 mb-2" data-id="id-0" data-type="cat-item-@item.kara_id">
+				<div>
+					<span class="image-block img-hover">
+						<a class="image-zoom" href="@item.image" rel="prettyPhoto[gallery]">
+							<img src="@item.image" class="img-responsive" alt="@item.room_name">
+							<div class="port-info">
+								<h5 class="text-uppercase">@item.room_name</h5>
+								<p>Giá phòng:@item.price /giờ</p>
+								<p>Sức chứa: @item.capacity người / phòng</p>
+								@foreach (var item1 in listKara)
+								{
+									if (item.kara_id == item1.kara_id)
+									{
+										<p>Liên hệ đặt phòng: @item1.phone</p>
+									}
+								}
+							</div>
+						</a>
+					</span>
+
+				</div>
+			</li>
+		}
+	</ul>
+
+	<!--end portfolio-area -->
+
+	<div class="clearfix"></div>
+</div>
+
+<section class="stats_test pb-5 container-fluid">
+	<div class="row inner_stat_wthree_agileits">
+		<div class="col-sm-3 col-6 py-5 stats_left counter_grid">
+			<i class="far fa-building"></i>
+			<p class="counter">2</p>
+			<h4>Chi nhánh</h4>
+		</div>
+		<div class="col-sm-3 col-6 py-5 stats_left counter_grid1">
+			<i class="fas fa-users"></i>
+			<p class="counter">50</p>
+			<h4>Nhân viên</h4>
+		</div>
+		<div class="col-sm-3 col-6 py-5 stats_left counter_grid2">
+			<i class="far fa-edit"></i>
+			<p class="counter">50</p>
+			<h4>Các món ăn và dịch vụ</h4>
+		</div>
+		<div class="col-sm-3 col-6 py-5 stats_left counter_grid3">
+			<i class="far fa-smile"></i>
+			<p class="counter">1045</p>
+			<h4>Đánh giá tốt từ khách hàng</h4>
+		</div>
+	</div>
+</section>
+
+
